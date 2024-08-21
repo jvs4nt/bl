@@ -19,9 +19,111 @@
     --dark: #343a40;
 }
 
-.novo-registro {
-    back
+/* CREATE USER */
+
+.users-create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.input-box label {
+    font-size: 13px;
+}
+
+
+
+.box-form {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom:30px;
+    width: 90%;
+    
+    
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    border: 1px solid #9298BD;
+    border-radius: 3px;
+    width: 250px;
+    height: 33px;
+}
+
+.input-box select {
+    border: 1px solid #9298BD;
+    border-radius: 3px;
+    width: 250px;
+    height: 33px;
+}
+
+.generate-password-box {
+    border: 1px solid green;
+    width: 90%;
+    
+}
+
+.generate-password-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.generate-password-row a {
+    background-color: var(--secondary);
+    color: var(--light);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 4px;
+
+}
+
+.generate-password-row a:hover {
+    background-color: #031d7e;
+    
+}
+
+.generate-password-row input {
+    border: 1px solid #9298BD;
+    border-radius: 3px;
+    width: 250px;
+    height: 33px;
+}
+
+.generate-password-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.novo-registro {
+    color: var(--light);
+    text-decoration: none;
+    padding: 10px 17px 10px 17px;
+    gap: 4px;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    transition: 0.2s;
+
+}
+
+.novo-registro:hover {
+    background-color: #031d7e;
+}
+
+/* CREATE USER END */
+
 
 .primary-color {
     color: var(--primary);
