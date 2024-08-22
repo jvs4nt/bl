@@ -21,8 +21,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/policy', [App\Http\Controllers\PolicyController::class, 'index'])->name('policy');
+
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
 Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');
+Route::post('/users/store', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');
+Route::get('/users/edit', [App\Http\Controllers\UserController::class, 'edit'])->name('users.edit');
 
 Route::get('passwords/token', function () {
     return view('auth.passwords.token');

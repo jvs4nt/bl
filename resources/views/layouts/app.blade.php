@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Blince') }}</title>
+    <link rel="icon" type="image/svg+xml" href="" />
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -56,7 +57,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
