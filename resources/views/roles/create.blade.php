@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="d-flex gap-4 align-items-center">
                                     <p>Usuários</p>
-                                    <div class=" d-flex flex-column align-items-start border border-primary" style="">
+                                    <div class=" d-flex flex-column align-items-start" style="">
                                         <div class="d-flex align-items-center justify-content-center gap-2">
                                             <input type="checkbox">
                                             <p class="p-0 m-0">Visualizar a tela de usuários</p>
