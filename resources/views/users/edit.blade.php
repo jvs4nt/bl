@@ -10,56 +10,56 @@
                         <div class="w-full d-flex justify-content-center fw-bold mb-5 mt-5 primary-color">
                             <p>Editar usuário</p>
                         </div>
-                        <form class="box-form" action="" method="POST">
+                        <form class="box-form" action="{{ route('users.update', $user->id)  }}" method="POST">
                             @method('PUT')
                             @csrf
 
                             <div class="d-flex justify-content-between">
                                 <div class="input-box">
                                     <label for="name">Nome</label>
-{{--                                    <input type="text" name="name" value="{{ $user->name }}" required>--}}
+                                    <input type="text" name="name" value="{{ $user->name }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="nome_usuario">Nome de usuário</label>
-{{--                                    <input type="text" name="nome_usuario" value="{{ $user->nome_usuario }}" required>--}}
+                                    <input type="text" name="nome_usuario" value="{{ $user->nome_usuario }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="email">E-mail</label>
-{{--                                    <input type="text" name="email" value="{{ $user->email }}" required>--}}
+                                    <input type="text" name="email" value="{{ $user->email }}" required>
                                 </div>
                             </div>
 
                             <div class="d-flex justify-content-between">
                                 <div class="input-box">
                                     <label for="recuperar_email">E-mail <span class="recuperacao-acesso">(Recuperação de acesso)</span></label>
-{{--                                    <input type="text" name="recuperar_email" value="{{ $user->recuperar_email }}" required>--}}
+                                    <input type="text" name="recuperar_email" value="{{ $user->recuperar_email }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="tel">Telefone</label>
-{{--                                    <input type="text" name="tel" value="{{ $user->tel }}" required>--}}
+                                    <input type="text" name="tel" value="{{ $user->tel }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="cel">Celular</label>
-{{--                                    <input type="text" name="cel" value="{{ $user->cel }}" required>--}}
+                                    <input type="text" name="cel" value="{{ $user->cel }}" required>
                                 </div>
                             </div>
 
                             <div class="d-flex justify-content-between mb-5">
                                 <div class="input-box">
                                     <label for="funcao">Função</label>
-{{--                                    <input type="text" class="funcao" value="{{ $user->funcao }}" required>--}}
+                                    <input type="text" name="funcao" class="funcao" value="{{ $user->funcao }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="localidade">Localidade</label>
-{{--                                    <input type="text" name="localidade" value="{{ $user->localidade }}" required>--}}
+                                    <input type="text" name="localidade" value="{{ $user->localidade }}" required>
                                 </div>
                                 <div class="input-box">
                                     <label for="perfil_acesso">Perfil de acesso</label>
                                     <select name="perfil_acesso" id="" required>
                                         <option value="">Selecione</option>
-{{--                                        <option value="1" {{ $user->perfil_acesso == 1 ? 'selected' : '' }}>1</option>--}}
-{{--                                        <option value="2" {{ $user->perfil_acesso == 2 ? 'selected' : '' }}>2</option>--}}
-{{--                                        <option value="3" {{ $user->perfil_acesso == 3 ? 'selected' : '' }}>3</option>--}}
+                                        <option value="1" {{ $user->perfil_acesso == 1 ? 'selected' : '' }}>1</option>
+                                        <option value="2" {{ $user->perfil_acesso == 2 ? 'selected' : '' }}>2</option>
+                                        <option value="3" {{ $user->perfil_acesso == 3 ? 'selected' : '' }}>3</option>
                                     </select>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="d-flex gap-2 align-items-center">
                                         <div class="switch">
-{{--                                            <input type="checkbox" id="ativo" name="ativo" {{ $user->ativo ? 'checked' : '' }}>--}}
+                                            <input type="checkbox" id="ativo" name="ativo" {{ $user->ativo ? 'checked' : '' }}>
                                             <label for="ativo" class="switch-label"></label>
                                         </div>
                                         <label class="label-ativo" for="ativo">Ativo</label>

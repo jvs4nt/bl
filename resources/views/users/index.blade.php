@@ -29,7 +29,30 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                @foreach($users as $user)
+                                    <tr>
+                                        <td>xpto</td>
+                                        <td>xpto</td>
+                                        <td>{{ $user->email }}</td>
+                                        <td>{{ $user->tel }}</td>
+                                        <td>{{ $user->cel }}</td>
+                                        <td>
+                                            @if($user->ativo == '1')
+                                                <span class="bg-success p-1 rounded-4 px-3 text-light fw-bold">Ativo</span>
+                                            @else
+                                                <span class="bg-danger p-1 rounded-4 px-3 text-light fw-bold">Inativo</span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-primary">Editar</a>
+                                            <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button type="submit" class="btn btn-danger">Excluir</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

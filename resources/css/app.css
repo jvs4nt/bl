@@ -17,6 +17,7 @@
     --danger: #dc3545;
     --light: #ffffff;
     --dark: #343a40;
+    --roles-background: #F3F6FF;
 }
 
 /* CREATE USER */
@@ -210,6 +211,11 @@ input:checked + .switch-label:before {
 }
 
 /* CREATE USER END */
+
+/* CREATE PROFILE */
+.bg-roles {
+    background-color: var(--roles-background);
+}
 
 
 .primary-color {

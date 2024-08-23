@@ -10,6 +10,9 @@
     <title>{{ config('app.name', 'Blince') }}</title>
     <link rel="icon" type="image/svg+xml" href="" />
 
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -38,7 +41,7 @@
                         <div class="dropdown-menu dropdown-menu-right p-1 bg-light" aria-labelledby="navbarDropdown">
                             <ul>
                                 <li class="link-color">
-                                    <a class="dropdown-item dropdown-link pt-3" href="#">
+                                    <a class="dropdown-item dropdown-link pt-3" href="{{ route('roles.index')  }}">
                                         {{ __('Perfis de Acesso') }}
                                     </a>
                                 </li>
@@ -105,5 +108,12 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- jQuery (necessário para o DataTables) -->
+{{--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>--}}
+    <!-- DataTables JS -->
+{{--    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>--}}
+
+
 </body>
 </html>

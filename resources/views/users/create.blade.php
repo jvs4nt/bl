@@ -47,7 +47,7 @@
                         <div class="d-flex justify-content-between mb-5">
                             <div class="input-box">
                                 <label for="funcao">Função</label>
-                                <input type="text" class="funcao" required>
+                                <input type="text" name="funcao" class="funcao" required>
                             </div>
                             <div class="input-box">
                                 <label for="localidade">Localidade</label>
